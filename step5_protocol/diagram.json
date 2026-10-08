@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "author": "Devagupthapu Sagari Kamala Das 25BEC0603",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -45.6,
+      "left": -55.8,
+      "attrs": { "volume": "0.1" }
+    }
+  ],
+  "connections": [
+    [ "bz1:2", "uno:8", "green", [ "v0" ] ],
+    [ "bz1:1", "uno:GND.1", "green", [ "v0" ] ],
+    [ "uno:8", "uno:A0", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
